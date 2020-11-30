@@ -1,0 +1,37 @@
+ 262  pwd
+  263  cd Documents/CEU/Courses/Coding\ for\ Economists/Assignment/
+  264  git clone https://github.com/bernardoqbandeira/assignment-football.git
+  265  ls
+  266  cd assignment-football/
+  267  mkdir code
+  268  ls -as
+  269  ls -af
+  270  ls -aFl
+  271  mkdir output
+  272  mkdir data
+  273  cd data
+  274  mkdir raw
+  275  mkdir derived
+  276  cd ..
+  277  ls -aFl
+  278  cd ..
+  279  cd data/raw/
+  280  ls
+  281  move 'Premier League 2012-13.csv' ~/Documents/CEU/Courses/Coding\ for\ Economists/Assignment/assignment-football/data/raw/
+  282  mv 'Premier League 2012-13.csv' ~/Documents/CEU/Courses/Coding\ for\ Economists/Assignment/assignment-football/data/raw/
+  283  cd ..
+  284  cd..
+  285  cd ..
+  286  cd assignment-football/data/raw
+  287  ls -aFl
+  288  cd ..
+  289  cd ..
+  290  cd .
+  291  cd ..
+  292  cd data/raw/
+  293  ls -aFl
+  294  mv notes.txt ~/Documents/CEU/Courses/Coding\ for\ Economists/Assignment/assignment-football/data/raw/
+  295  cd ..
+  296  cd ..
+  297  cd assignment-football/
+  298  history
