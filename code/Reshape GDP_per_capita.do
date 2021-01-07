@@ -29,3 +29,4 @@ label variable year "Year"
 
 * Saving the transformed data.
 save "\\tsclient\C\Users\Bernardo Bandeira\Documents\CEU\Courses\Coding for Economists\Assignment\Final Assignment\data\derived\GDP_per_capita_reshaped.csv", replace
+save "\\tsclient\C\Users\Bernardo Bandeira\Documents\CEU\Courses\Coding for Economists\Assignment\Final Assignment\data\derived\GDP_per_capita_reshaped.dta", replace

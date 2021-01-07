@@ -25,6 +25,6 @@ rename yr LifeExpectancy
 label variable LifeExpectancy "Life Expectancy since birth"
 label variable year "Year"
 
-* Saving the transformed data.
+* Saving the transformed data as dta and csv.
 save "\\tsclient\C\Users\Bernardo Bandeira\Documents\CEU\Courses\Coding for Economists\Assignment\Final Assignment\data\derived\LEreshaped.csv", replace
-
+save "\\tsclient\C\Users\Bernardo Bandeira\Documents\CEU\Courses\Coding for Economists\Assignment\Final Assignment\data\derived\LEreshaped.dta", replace

@@ -27,6 +27,7 @@ label variable year "Year"
 
 * Saving the transformed data.
 save "\\tsclient\C\Users\Bernardo Bandeira\Documents\CEU\Courses\Coding for Economists\Assignment\Final Assignment\data\derived\LEreshaped.csv", replace
+save "\\tsclient\C\Users\Bernardo Bandeira\Documents\CEU\Courses\Coding for Economists\Assignment\Final Assignment\data\derived\LEreshaped.dta", replace
 
 * Restarting for the GDP per capita
 * Importing the dataset and adjusting some of the variables already, for example transforming strings in numbers.
@@ -59,6 +60,7 @@ label variable year "Year"
 
 * Saving the transformed data.
 save "\\tsclient\C\Users\Bernardo Bandeira\Documents\CEU\Courses\Coding for Economists\Assignment\Final Assignment\data\derived\GDP_per_capita_reshaped.csv", replace
+save "\\tsclient\C\Users\Bernardo Bandeira\Documents\CEU\Courses\Coding for Economists\Assignment\Final Assignment\data\derived\GDP_per_capita_reshaped.dta", replace
 
 * Now we need to isolate for only one specific year so we merge the files.
 
@@ -68,11 +70,14 @@ use "\\tsclient\C\Users\Bernardo Bandeira\Documents\CEU\Courses\Coding for Econo
 *Let`s say we will compare for the year 2018
 keep if year == 2018
 save "\\tsclient\C\Users\Bernardo Bandeira\Documents\CEU\Courses\Coding for Economists\Assignment\Final Assignment\data\derived\LE2018reshaped.csv", replace
+save "\\tsclient\C\Users\Bernardo Bandeira\Documents\CEU\Courses\Coding for Economists\Assignment\Final Assignment\data\derived\LE2018reshaped.dta", replace
+
 
 *Now for the GDP per Capita
 use "\\tsclient\C\Users\Bernardo Bandeira\Documents\CEU\Courses\Coding for Economists\Assignment\Final Assignment\data\derived\GDP_per_capita_reshaped.csv", clear
 keep if year == 2018
 save "\\tsclient\C\Users\Bernardo Bandeira\Documents\CEU\Courses\Coding for Economists\Assignment\Final Assignment\data\derived\GDP2018reshaped.csv", replace
+save "\\tsclient\C\Users\Bernardo Bandeira\Documents\CEU\Courses\Coding for Economists\Assignment\Final Assignment\data\derived\GDP2018reshaped.dta", replace
 
 *Now we merge the two datas and clear for any missing variables
 merge 1:1 countrycode using "\\tsclient\C\Users\Bernardo Bandeira\Documents\CEU\Courses\Coding for Economists\Assignment\Final Assignment\data\derived\LE2018reshaped.csv"
@@ -93,3 +98,6 @@ scatter LifeExpectancy GDP_per_capita
 
 *To export the graph
 graph export graph2018.png, replace
+
+*Saving project
+save "\\tsclient\C\Users\Bernardo Bandeira\Documents\CEU\Courses\Coding for Economists\Assignment\Final Assignment\code\Master.dta", replace

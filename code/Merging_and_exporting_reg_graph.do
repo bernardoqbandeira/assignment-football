@@ -6,11 +6,13 @@ use "\\tsclient\C\Users\Bernardo Bandeira\Documents\CEU\Courses\Coding for Econo
 *Let`s say we will compare for the year 2018
 keep if year == 2018
 save "\\tsclient\C\Users\Bernardo Bandeira\Documents\CEU\Courses\Coding for Economists\Assignment\Final Assignment\data\derived\LE2018reshaped.csv", replace
+save "\\tsclient\C\Users\Bernardo Bandeira\Documents\CEU\Courses\Coding for Economists\Assignment\Final Assignment\data\derived\LE2018reshaped.dta", replace
 
 *Now for the GDP per Capita
 use "\\tsclient\C\Users\Bernardo Bandeira\Documents\CEU\Courses\Coding for Economists\Assignment\Final Assignment\data\derived\GDP_per_capita_reshaped.csv", clear
 keep if year == 2018
 save "\\tsclient\C\Users\Bernardo Bandeira\Documents\CEU\Courses\Coding for Economists\Assignment\Final Assignment\data\derived\GDP2018reshaped.csv", replace
+save "\\tsclient\C\Users\Bernardo Bandeira\Documents\CEU\Courses\Coding for Economists\Assignment\Final Assignment\data\derived\GDP2018reshaped.dta", replace
 
 *Now we merge the two datas and clear for any missing variables
 merge 1:1 countrycode using "\\tsclient\C\Users\Bernardo Bandeira\Documents\CEU\Courses\Coding for Economists\Assignment\Final Assignment\data\derived\LE2018reshaped.csv"
